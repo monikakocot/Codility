@@ -31,44 +31,24 @@ public class BinaryGapver2 {
                     if (zeroInRow > longest) {
                         longest = zeroInRow;
                     }
-                    zeroInRow = 0;
+                    zeroInRow = 0; // 0 for start new counting
                 }
                 else { zeroInRow++; }
             }
             return longest;
         }
 
-    /*
-            for (i=0; i< numberAsBinary.length();i++) {
-            if (numberAsBinary.charAt(i) == '0') {
-                    if (numberAsBinary.charAt(i) == '0' && numberAsBinary.charAt(i + 1) == '0') {
-                        temp++;
-                        max = temp;
-                    } else {
-                        max = temp;
-                    }
-            }else{
-                    max = temp;
-                }
-                if(numberAsBinary.charAt(i) != '1') {
-                break;
-                }
-            }
-        return max;
-     */
+
     public static void main(String[] args) {
 
         System.out.println(toBinary(529)); // should be 1000010001
         System.out.println(toBinary(15)); // should be 1111
+        System.out.println(toBinary(9)); // should be 1001
         System.out.println("--------------------");
         System.out.println(solution(529)); // should be 4
         System.out.println(solution(15)); // should be 0
+        System.out.println(solution(9)); // should be 2
         System.out.println("--------------------");
-
-        String word = "ALFABET";
-        int i =0;
-        System.out.println(word.substring(i, i+1));
-
 
     }
 
