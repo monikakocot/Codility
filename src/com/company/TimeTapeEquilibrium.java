@@ -63,7 +63,7 @@ public class TimeTapeEquilibrium {
             System.out.println(sumOnLeft);
             System.out.println(sumOnRight);
             System.out.println("***************");
-            
+
             if (Math.abs(sumOnLeft-sumOnRight)<odds) {
                 odds = Math.abs(sumOnLeft-sumOnRight);
             }
