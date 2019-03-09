@@ -59,5 +59,7 @@ public class CyclicRotation {
             System.out.println(output);
         }
 
+
+        System.out.println("***" + 4%5);
     }
 }

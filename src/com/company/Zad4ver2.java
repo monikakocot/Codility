@@ -70,6 +70,7 @@ public class Zad4ver2 {
 
         System.out.println("MAIN ---------------------");
         System.out.println(solution(A));
+        System.out.println(Math.sqrt(4));
 
     }
 

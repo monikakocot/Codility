@@ -57,8 +57,12 @@ public class CountingElementsFrogRiver {
         for (int i = 0 ; i < N; i++) {
             if (A[i] <= X)
                 hashSet.add(A[i]);
-            if (hashSet.size() == X)
+            if (hashSet.size() == X) {
+                System.out.println(hashSet.size());
+                System.out.println(hashSet);
                 return i;
+
+            }
         }
 
         return -1;
@@ -67,7 +71,7 @@ public class CountingElementsFrogRiver {
 
     public static void main(String[] args) {
 
-        int[] A = new int[8];
+        int[] A = new int[9];
 
         A[0] = 1;
         A[1] = 3;
@@ -75,8 +79,9 @@ public class CountingElementsFrogRiver {
         A[3] = 4;
         A[4] = 2;
         A[5] = 3;
-        A[6] = 5;
+        A[6] = 4;
         A[7] = 4;
+        A[8] = 5;
 
         System.out.println(solution(A,5));
     }
